@@ -1,16 +1,28 @@
 // @flow
 
 import {Navbar} from "./Components/Navbar.tsx";
+import {HeroImage} from "./Components/HeroImage.tsx";
+import {FeatureHighlights} from "./Components/Features/FeatureHighlights.tsx";
 
 export const CateringLayout = () => {
     return (
-        <div className="grid grid-rows-[75px_1fr_75px] w-full h-full ">
-           {/*// <nav  className="border border-blue-500 ">*/}
+        <div className="grid grid-rows-[1fr_auto] w-full h-full ">
+
                 <Navbar/>
-            {/*</nav>*/}
-          {/*///  <div className="border border-blue-500 "></div>*/}
-            <div className="border border-purple-700 "></div>
-            <div className="border border-orange-500 "></div>
+
+            <main className="pt-20">
+                <HeroImage/>
+                <FeatureHighlights/>
+
+
+                {/*<HeroImage/>*/}
+                {/*<HeroImage/>*/}
+            </main>
+
+            <footer className="border border-green-800">
+                Footer here
+            </footer>
+
 
         </div>
     );
