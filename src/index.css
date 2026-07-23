@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import url(
+'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700'
+);
+
+@layer base {
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  body{
+    background: #F7F0E6;
+  }
+}
+
+@theme {
+
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Poppins", sans-serif;
+    --font-logo: "Cormorant Garamond", serif;
+
+
+  /*** brand colors ***/
+  --color-deep-forest-green: #0B3A2A;   /* Primary Brand */
+  --color-espresso-brown: #3A2015;      /* Secondary Brand */
+  --color-african-gold: #C58A2A;        /* Accent */
+  --color-champagne-gold: #D9B56D;      /* Light Accent */
+  --color-warm-ivory: #F8F1E7;          /* Cream Background */
+  --color-soft-beige: #EFE3D0;          /* Card Background */
+  --color-charcoal: #24201C;            /* Dark Text */
+  --color-warm-white: #FFFDF8;          /* White Text */
+  --color-brown-gray: #74675D;          /* Muted Text */
+
+  /* TYPOGRAPHY SCALE */
+  --text-hero-xl: 72px;
+  --text-hero-mobile: 40px;
+  --text-heading-lg: 48px;
+  --text-heading-md: 30px;
+  --text-heading-sm: 24px;
+  --text-subtitle: 14px;
+
+  --text-body-lg: 18px;
+  --text-body-normal: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
+
+  /* FONT WEIGHTS */
+  --font-thin: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+.hero-xl {
+  font-size: var(--text-hero-xl);
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+}
+
+.hero-mobile {
+  font-size: var(--text-hero-mobile);
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+}
+
+.heading-lg {
+  font-size: var(--text-heading-lg);
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+}
+
+.heading-md {
+  font-size: var(--text-heading-md);
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+}
+
+.heading-sm {
+  font-size: var(--text-heading-sm);
+  font-family: var(--font-heading);
+  font-weight: var(--font-medium);
+}
+
+.subtitle {
+  font-size: var(--text-subtitle);
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+}
+
+.body-lg {
+  font-size: var(--text-body-lg);
+  font-family: var(--font-body);
+  font-weight: var(--font-normal);
+}
+
+.body-normal {
+  font-size: var(--text-body-normal);
+  font-family: var(--font-body);
+  font-weight: var(--font-normal);
+}
+
+.body-sm {
+  font-size: var(--text-body-sm);
+  font-family: var(--font-body);
+  font-weight: var(--font-thin); /* 300 */
+}
+
+.caption {
+  font-size: var(--text-caption);
+  font-family: var(--font-body);
+  font-weight: var(--font-thin); /* 300 */
+}
+
+
+
+
+/*Button System*/
+/*bg-[#C58A2A]*/
+/*text-white*/
+/*rounded-lg*/
+/*px-6*/
+/*py-3*/
+/*font-semibold*/
+/*hover:bg-[#D9B56D]*/
+
+/*//Secondary Button*/
+/*border border-[#C58A2A]*/
+/*text-[#C58A2A]*/
+/*bg-transparent*/
+/*rounded-lg*/
+
+/*Dark CTA Button*/
+/*bg-[#0B3A2A]*/
+/*text-white*/
+/*rounded-lg*/
