@@ -134,6 +134,7 @@ export const Navbar: React.FC = () => {
             border-african-gold/30
 
             shadow-md
+            fixed
             "
         >
 
