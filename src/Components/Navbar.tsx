@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { EventButton } from "./EventButton.tsx";
-import TreeIcon from "/public/iconsvg/tree.svg";
+import TreeIcon from "../assets/iconsvg/Tree.svg";
 
 
 const navData = [

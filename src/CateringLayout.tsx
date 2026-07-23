@@ -20,7 +20,7 @@ export const CateringLayout = () => {
             </main>
 
             <footer className="border border-green-800">
-                Footer here
+                <CateringLayout/>
             </footer>
 
 
