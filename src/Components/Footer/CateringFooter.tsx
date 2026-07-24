@@ -20,7 +20,7 @@ const FooterTop = () => {
     }
 
     return (
-        <div className="flex w-full flex-col gap-10 px-8 py-10 lg:flex-row">
+        <div className="flex w-full flex-col gap-10 px-8 py-10 sm:flex-row">
 
             {/* Left */}
             <div className="flex basis-[30%] flex-col gap-6">
@@ -31,7 +31,7 @@ const FooterTop = () => {
                     <img
                         src={TreeIcon}
                         alt="Tree Icon"
-                        className="h-28 w-28 shrink-0 object-contain"
+                        className="md:h-28 md:w-28 h-24 w-24 shrink-0 object-contain"
                     />
 
                     <div className="flex min-w-0 flex-col">
@@ -40,7 +40,8 @@ const FooterTop = () => {
                             className="
                                 block
                                 font-logo
-                                text-3xl
+                                 text-2xl
+                                 md:text-3xl
                                 leading-tight
                                 tracking-wide
                                 text-warm-white
@@ -56,7 +57,8 @@ const FooterTop = () => {
                                 uppercase
                                 tracking-[0.2em]
                                 text-african-gold
-                                text-sm
+                                text-[0.8rem]
+                                md:text-sm
                             "
                         >
                             Liberian Catering
@@ -71,8 +73,11 @@ const FooterTop = () => {
                     className="
                         max-w-sm
                         text-light-coffee
-                        leading-8
+                        leading-6
                         break-words
+                        text-sm
+                        md:text-md
+
                     "
                 >
                     Sharing the rich traditions and bold flavors of Liberia
@@ -93,12 +98,15 @@ const FooterTop = () => {
             {/* Right */}
             <div className="basis-[70%]">
 
-                <ul className="grid grid-cols-2 gap-10 xl:grid-cols-4">
+                <ul className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 xl:grid-cols-4">
 
                     {footerData.map((section, sectionIndex) => (
                         <li key={sectionIndex} className="min-w-0">
 
-                            <span className="mb-4 block font-semibold text-african-gold">
+                            <span className="mb-4 block font-semibold text-african-gold
+                            text-[1rem]
+                            md:text-[1.2rem]
+                            ">
                                 {section.header}
                             </span>
 
@@ -117,7 +125,10 @@ const FooterTop = () => {
                                             {item.icon === "clock" && <Clock size={16}  className="hover:opacity-35"  />}
                                         </span>
 
-                                        <span className="break-words whitespace-pre-line text-light-coffee">
+                                        <span className="break-words whitespace-pre-line text-light-coffee
+                                        text-sm
+                                        md:text-md
+                                        ">
                                             {item.description}
                                         </span>
                                     </li>
@@ -285,7 +296,7 @@ const FooterBottom = () => {
             lg:items-center
             lg:justify-between
         ">
-            <div className="flex flex-col relative left-15">
+            <div className="flex flex-col relative left-4">
                 <span className="flex items-center gap-1">
                     <Copyright className="h-4 w-4" />
                     2026 Daughter of Zion Catering
