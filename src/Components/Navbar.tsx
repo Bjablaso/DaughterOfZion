@@ -4,6 +4,7 @@ import * as React from "react";
 import { useState } from "react";
 import { EventButton } from "./EventButton.tsx";
 import TreeIcon from "../assets/iconsvg/Tree.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 const navData = [
@@ -28,7 +29,8 @@ const Logo = () => {
 
             <h1 className="
                 font-logo
-                text-3xl
+                text-2xl
+                md:text-3xl
                 leading-none
                 text-warm-white
             ">
@@ -36,12 +38,13 @@ const Logo = () => {
             </h1>
 
             <div className="flex flex-row">
-                <img src={TreeIcon} alt="Tree Icon" className="w-8 h-8" />;
+                <img src={TreeIcon} alt="Tree Icon" className="md:w-8 md:h-8  w-6 h-6" />;
 
                 <div>
                  <span className="
                     font-logo
-                    text-2xl
+                     text-xl
+                     md:text-2xl
                     text-warm-white
                     leading-none
                  ">
@@ -67,9 +70,11 @@ const NavigationLinks = () => {
 
         <ul className="
             hidden
-            lg:flex
+            md:flex
             items-center
-            gap-8
+            lg:gap-8
+            md:gap-4
+
         ">
 
             {navData.map((item)=>(
@@ -86,6 +91,9 @@ const NavigationLinks = () => {
                         duration-300
                         relative
                         pb-1
+                       
+                         lg:text-sm
+                         md:text-[0.8rem]
 
                         ${
                         active === item
@@ -146,6 +154,7 @@ export const Navbar: React.FC = () => {
 
 
             <EventButton/>
+            <GiHamburgerMenu className="md:hidden flex  h-6 w-6 text-african-gold"/>
 
 
         </header>
