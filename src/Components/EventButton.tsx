@@ -8,7 +8,7 @@ export const EventButton: React.FC = () => {
     return (
         <div className="
         hidden
-        lg:flex
+        md:flex
         bg-african-gold
         text-white
         rounded-lg
@@ -16,6 +16,9 @@ export const EventButton: React.FC = () => {
         hover:bg-champagne-gold
         text-center
         items-center
+
+        xl:text-sm
+        md:text-[0.8rem]
 
         p-2
         ">
